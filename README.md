@@ -40,5 +40,6 @@ arguments
     - `data` a void pointer to data, originally passed in on the original call
     - `int` the x pixel that's set
     - `int` the y pixel that's set
+
     if `setPixel` returns `BH_STOP_LINE`, it will stop the line drawing process.
     Otherwise, it will continue.
