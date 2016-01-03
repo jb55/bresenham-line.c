@@ -1,0 +1,9 @@
+{
+  "name": "bresenham-line",
+  "version": "0.0.1",
+  "repo": "jb55/bresenham-line.c",
+  "description": "Bresenham's line drawing algorithm",
+  "keywords": ["bresenham"],
+  "license": "MIT",
+  "src": ["bresenham_line.c", "bresenham_line.h"]
+}
