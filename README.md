@@ -15,7 +15,7 @@ bresenham-line clib
 int draw_pixel(void *data, int x, int y) {
   struct draw_mode *dm = (struct draw_mode*)data;
   struct world *world = dm->world;
-  draw_pixel_at(world, x, y, dm->type, def_accel);
+  draw_pixel_at(world, x, y, dm->type);
   return 0;
 }
 
@@ -40,3 +40,5 @@ arguments
     - `data` a void pointer to data, originally passed in on the original call
     - `int` the x pixel that's set
     - `int` the y pixel that's set
+    if `setPixel` returns `BH_STOP_LINE`, it will stop the line drawing process.
+    Otherwise, it will continue.
